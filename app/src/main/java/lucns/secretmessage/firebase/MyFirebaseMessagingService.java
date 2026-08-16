@@ -10,7 +10,7 @@ import com.google.firebase.messaging.RemoteMessage;
 import java.util.Map;
 
 import lucns.secretmessage.R;
-import lucns.secretmessage.activities.MessageActivity;
+import lucns.secretmessage.activities.MessagesActivity;
 import lucns.secretmessage.services.NotificationProvider;
 import lucns.secretmessage.utils.AppPreferences;
 
@@ -33,7 +33,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     public void onCreate() {
         super.onCreate();
         notification = new NotificationProvider(this);
-        notification.setActivityClass(MessageActivity.class);
+        notification.setActivityClass(MessagesActivity.class);
     }
 
     @Override

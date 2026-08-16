@@ -1,6 +1,7 @@
 package lucns.secretmessage.activities;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -31,7 +32,7 @@ import java.util.Locale;
 import lucns.secretmessage.R;
 import lucns.secretmessage.utils.Utils;
 
-public class MessageActivity extends Activity {
+public class MessagesActivity extends Activity {
 
     private TextView textStatus;
     private ListView listView;
@@ -40,17 +41,20 @@ public class MessageActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_message);
+        setContentView(R.layout.activity_messages);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         textStatus = findViewById(R.id.textStatus);
         progressBar = findViewById(R.id.progressBar);
         listView = findViewById(R.id.listView);
-        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Utils.vibrate();
-                return false;
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                Message message = (Message) adapterView.getItemAtPosition(position);
+                Intent intent = new Intent(MessagesActivity.this, MessageViewActivity.class);
+                intent.putExtra("message", message.text);
+                intent.putExtra("datetime", getDateTime(message.timestamp));
+                startActivity(intent);
             }
         });
 

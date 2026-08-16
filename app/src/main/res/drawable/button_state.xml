@@ -21,7 +21,7 @@
             <item>
                 <shape android:shape="rectangle">
                     <corners android:radius="24dp" />
-                    <solid android:color="@color/main_light_2" />
+                    <solid android:color="@color/accent" />
                 </shape>
             </item>
         </ripple>
@@ -39,7 +39,7 @@
             <item>
                 <shape android:shape="rectangle">
                     <corners android:radius="24dp" />
-                    <solid android:color="@color/main_dark" />
+                    <solid android:color="@color/accent" />
                 </shape>
             </item>
         </ripple>

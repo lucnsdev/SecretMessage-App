@@ -38,7 +38,7 @@ public class PermissionActivity extends Activity {
             requestPermissions(deniedPermissions, 1234);
             return;
         } else {
-            startActivity(new Intent(this, MessageActivity.class));
+            startActivity(new Intent(this, MessagesActivity.class));
             finish();
         }
     }

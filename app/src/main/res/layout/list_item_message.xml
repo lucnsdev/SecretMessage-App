@@ -1,25 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/margin_2"
     android:background="@drawable/message_background"
-    android:padding="@dimen/margin_2">
+    android:orientation="vertical"
+    android:padding="@dimen/margin_3">
 
-    <TextView
-        android:id="@+id/textMessage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textColor="@color/main"
-        android:textSize="20sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/icon_message_accent" />
+
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_2"
+            android:layout_toEndOf="@id/icon"
+            android:text="@string/app_name"
+            android:textColor="@color/white_2"
+            android:textSize="20sp" />
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/textDateTime"
+        android:layout_marginTop="@dimen/margin_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textMessage"
         android:text="@string/app_name"
-        android:textColor="@color/gray_8"
+        android:textColor="@color/white_4"
         android:textSize="16sp" />
-</RelativeLayout>
+</LinearLayout>

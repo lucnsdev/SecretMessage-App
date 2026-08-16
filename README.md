@@ -3,6 +3,6 @@ Um app que recebe mensagens anônimas que foram enviadas pela página web, usand
 
 Repositório da pagina web: https://github.com/lucnsdev/SecretMessage-Web
 
-<img width="480" alt="Screenshot_20260816_011305_SecretMessage" src="https://github.com/user-attachments/assets/db51acdc-4de5-4e49-bf33-2737e1e4a615" />
-<img width="480" alt="Screenshot_20260815_235054_One UI Home" src="https://github.com/user-attachments/assets/a51e4e9b-a33d-4e67-a432-abc259d1cef4" />
+<img width="360" alt="Screenshot_20260816_011305_SecretMessage" src="https://github.com/user-attachments/assets/db51acdc-4de5-4e49-bf33-2737e1e4a615" />
+<img width="360" alt="Screenshot_20260815_235054_One UI Home" src="https://github.com/user-attachments/assets/a51e4e9b-a33d-4e67-a432-abc259d1cef4" />
 

@@ -1,7 +1,7 @@
 # SecretMessage
 Um app que notifica ao receber mensagens anônimas que foram enviadas pela página web, usando Firebase Cloud Messaging e RealTime Database.
 
-Repositório da pagina web: [(SecretMessage)](https://github.com/lucnsdev/SecretMessage-Web)
+Repositório da pagina web: [SecretMessage-Web](https://github.com/lucnsdev/SecretMessage-Web)
 
 Pagina Web hospedada: https://lucns-secret.freedev.app/
 

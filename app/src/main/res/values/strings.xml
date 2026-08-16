@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SecretMessage</string>
+    <string name="notification_small">Small</string>
+    <string name="notification_alert">Alert</string>
+    <string name="copied">Copied</string>
+    <string name="no_messages">No messages.</string>
+    <string name="new_message">New message arrived!</string>
+    <string name="no_connection">No connection!</string>
+
+    <string name="error_connection">Connection error!</string>
+
+    <string name="few_seconds">Few seconds ago</string>
+    <string name="format_minutes">%d minute%s ago</string>
+    <string name="format_hours">%d hour%s ago</string>
+    <string name="format_days">%d day%s ago</string>
+</resources>

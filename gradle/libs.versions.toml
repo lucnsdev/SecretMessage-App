@@ -1,0 +1,18 @@
+[versions]
+agp = "9.3.1"
+playServices = "4.5.0"
+firebaseBom = "34.17.0"
+firebaseMessaging = "25.1.1"
+googleAuthLibraryOauth2Http = "1.50.0"
+
+[libraries]
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-messaging = { module = "com.google.firebase:firebase-messaging", version.ref = "firebaseMessaging" }
+firebase-database = { module = "com.google.firebase:firebase-database" }
+google-auth-library-oauth2-http = { module = "com.google.auth:google-auth-library-oauth2-http", version.ref = "googleAuthLibraryOauth2Http" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+google-play-services = { id = "com.google.gms.google-services", version.ref = "playServices" }
+

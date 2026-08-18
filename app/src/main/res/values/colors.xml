@@ -24,7 +24,7 @@
     <color name="black">#000000</color>
 
     <color name="accent">#9D1ED3</color>
-    <color name="message_text">#BB63E0</color>
+    <color name="message_text">#DC8CFF</color>
     <color name="polygon_blurred_color">#751B9B</color>
     <color name="message">#16ffffff</color>
 </resources>
